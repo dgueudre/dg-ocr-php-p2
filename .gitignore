@@ -1,0 +1,7 @@
+/public/uploads/*
+/public/wp-content/*
+/public/wp-core/*
+/vendor
+
+!/public/wp-core/wp-config.php
+/wp-config.php
