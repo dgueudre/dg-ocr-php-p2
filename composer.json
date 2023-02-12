@@ -22,7 +22,8 @@
         "johnpbloch/wordpress-core-installer": "^2.0",
         "johnpbloch/wordpress-core": "^6.1",
         "wpackagist-plugin/akismet": "^5.0",
-        "wpackagist-plugin/wordpress-seo": "^20.1"
+        "wpackagist-plugin/wordpress-seo": "^20.1",
+        "wpackagist-theme/twentytwentythree": "^1.0"
     },
     "extra": {
         "wordpress-install-dir": {
@@ -31,6 +32,9 @@
         "installer-paths": {
             "public/wp-content/plugins/{$name}/": [
                 "type:wordpress-plugin"
+            ],
+            "public/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
             ]
         }
     },
