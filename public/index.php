@@ -1,22 +1,17 @@
 <?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
 
-// $url = $_SERVER['REQUEST_URI'] ?? $argv[1] ?? null;
-
-define('WP_CONFIG_PATH', __DIR__ . '/../../wp-config.php');
-
-// define( 'ABSPATH', __DIR__ . '/wp-core/' );
-
-include './wp-core/index.php';
-
-/*
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-chdir(__DIR__.'/..');
-
-require 'vendor/autoload.php';
-
-require 'src/app.php';
-*/
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-core/wp-blog-header.php';
