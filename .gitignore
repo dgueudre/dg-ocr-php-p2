@@ -1,5 +1,8 @@
 /public/uploads/*
-/public/wp-content/*
+/public/wp-content/themes/*
+!/public/wp-content/themes/custom-*
+/public/wp-content/plugins/*
+!/public/wp-content/plugins/custom-*
 /public/wp-core/*
 /vendor
 
