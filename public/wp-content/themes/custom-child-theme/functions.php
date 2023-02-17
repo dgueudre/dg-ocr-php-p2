@@ -9,8 +9,8 @@ function theme_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
-function capitaine_register_post_types() {
-	
+function capitaine_register_post_types()
+{
     // CPT Portfolio
     $labels = array(
         'name' => 'Portfolio',
@@ -21,16 +21,16 @@ function capitaine_register_post_types() {
         'menu_name' => 'Portfolio'
     );
 
-	$args = array(
+    $args = array(
         'labels' => $labels,
         'public' => true,
         'show_in_rest' => false,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor','thumbnail' ),
-        'menu_position' => 5, 
+        'supports' => array( 'title', 'editor','thumbnail', 'custom-fields' ),
+        'menu_position' => 5,
         'menu_icon' => 'dashicons-admin-customizer',
-	);
+    );
 
-	register_post_type( 'portfolio', $args );
+    register_post_type('portfolio', $args);
 }
-add_action( 'init', 'capitaine_register_post_types' ); // Le hook init lance la fonction
+add_action('init', 'capitaine_register_post_types'); // Le hook init lance la fonction

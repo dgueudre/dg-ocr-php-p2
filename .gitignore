@@ -1,5 +1,6 @@
-/public/uploads/*
+/public/wp-content/uploads/*
 /public/wp-content/themes/*
+/public/wp-content/languages/*
 !/public/wp-content/themes/custom-*
 /public/wp-content/plugins/*
 !/public/wp-content/plugins/custom-*
